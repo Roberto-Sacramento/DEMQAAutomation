@@ -347,3 +347,4 @@
 /home/karbax/Documents/GIT/DEMQAAutomation/SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.pdb
 /home/karbax/Documents/GIT/DEMQAAutomation/SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.genruntimeconfig.cache
 /home/karbax/Documents/GIT/DEMQAAutomation/SpecFlow_DMQAutomation/obj/Debug/net6.0/ref/SpecFlow_DMQAutomation.dll
+/home/karbax/Documents/GIT/DEMQAAutomation/SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.sourcelink.json

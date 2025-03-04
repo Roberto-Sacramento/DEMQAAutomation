@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpecFlow_DMQAutomation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d5e4cfadf05df956e9dbe210c9ace0bfb02cd97")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpecFlow_DMQAutomation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpecFlow_DMQAutomation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
