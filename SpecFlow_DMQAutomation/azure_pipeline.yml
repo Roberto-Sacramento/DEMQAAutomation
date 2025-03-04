@@ -1,0 +1,43 @@
+﻿trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+stages:
+- stage: Build
+  jobs:
+  - job: Build
+    steps:
+    - task: UseDotNet@2
+      inputs:
+        packageType: 'sdk'
+        version: '6.x.x' # Use the appropriate .NET version
+        installationPath: $(Agent.ToolsDirectory)/dotnet
+
+    - script: |
+        dotnet build --configuration $(buildConfiguration)
+      displayName: 'Build project'
+
+- stage: Test
+  jobs:
+  - job: Test
+    steps:
+    - task: UseDotNet@2
+      inputs:
+        packageType: 'sdk'
+        version: '6.x.x' # Use the appropriate .NET version
+        installationPath: $(Agent.ToolsDirectory)/dotnet
+
+    - script: |
+        dotnet test --configuration $(buildConfiguration) --logger trx
+      displayName: 'Run tests'
+
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'VSTest'
+        testResultsFiles: '**/*.trx'
+        mergeTestResults: true
