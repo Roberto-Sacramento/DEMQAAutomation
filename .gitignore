@@ -32,8 +32,14 @@ TestResults/
 *.trx
 *.coverage
 
-# Ignore coverage tools files
-coverage*
-*.coverage
-*.coveragexml
-*.log
+# Ignore specific Debug and Release directories
+bin/Debug/
+bin/Release/
+obj/Debug/
+obj/Release/
+
+# Ignore specific file types
+bin/Debug/net6.0/*.tmp
+bin/Debug/net6.0/*.dll
+bin/Debug/net6.0/*.pdb
+obj/Debug/net6.0/*.cs
