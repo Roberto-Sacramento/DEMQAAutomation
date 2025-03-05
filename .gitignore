@@ -1,12 +1,39 @@
-obj/
+# Ignore Visual Studio Code specific files
+.vscode/
+
+# Ignore build outputs
 bin/
-.vs/
-SpecFlow_DMQAutomation/bin/Debug/net6.0/nunit_random_seed.tmp
-SpecFlow_DMQAutomation/bin/Debug/net6.0/SpecFlow_DMQAutomation.dll
-SpecFlow_DMQAutomation/bin/Debug/net6.0/SpecFlow_DMQAutomation.pdb
-SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.AssemblyInfo.cs
-SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.AssemblyInfoInputs.cache
-SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.dll
-SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.pdb
-SpecFlow_DMQAutomation/obj/Debug/net6.0/ref/SpecFlow_DMQAutomation.dll
-SpecFlow_DMQAutomation/obj/Debug/net6.0/refint/SpecFlow_DMQAutomation.dll
+obj/
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Rider specific files
+.idea/
+
+# Ignore Mac files
+*.DS_Store
+
+# Ignore temporary files
+*.temp
+
+# Ignore logs
+*.log
+
+# Ignore test results
+TestResults/
+*.trx
+*.coverage
+
+# Ignore coverage tools files
+coverage*
+*.coverage
+*.coveragexml
+*.log
