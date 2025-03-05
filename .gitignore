@@ -1,3 +1,12 @@
 obj/
 bin/
 .vs/
+SpecFlow_DMQAutomation/bin/Debug/net6.0/nunit_random_seed.tmp
+SpecFlow_DMQAutomation/bin/Debug/net6.0/SpecFlow_DMQAutomation.dll
+SpecFlow_DMQAutomation/bin/Debug/net6.0/SpecFlow_DMQAutomation.pdb
+SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.AssemblyInfo.cs
+SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.AssemblyInfoInputs.cache
+SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.dll
+SpecFlow_DMQAutomation/obj/Debug/net6.0/SpecFlow_DMQAutomation.pdb
+SpecFlow_DMQAutomation/obj/Debug/net6.0/ref/SpecFlow_DMQAutomation.dll
+SpecFlow_DMQAutomation/obj/Debug/net6.0/refint/SpecFlow_DMQAutomation.dll
