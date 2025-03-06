@@ -6,7 +6,7 @@ namespace SpecFlow_DMQAutomation.Configuration
 {
     public class ChromeDriverConfig
     {
-        private IWebDriver _driver;
+        private IWebDriver? _driver;
         private static readonly string DriverPath = Path.Combine(Directory.GetCurrentDirectory(), "/home/karbax/Documents/GIT/DEMQAAutomation/SpecFlow_DMQAutomation/Drivers/chromedriver");
         public static readonly string BaseUrl = "https://demoqa.com/";
 
