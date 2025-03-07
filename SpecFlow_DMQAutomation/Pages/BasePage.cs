@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-
+using SpecFlow_DMQAutomation.Configuration;
 namespace SpecFlow_DMQAutomation.Pages
 {
     public class BasePage

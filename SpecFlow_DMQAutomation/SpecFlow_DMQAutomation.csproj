@@ -15,6 +15,7 @@
     <PackageReference Include="NUnit3TestAdapter" Version="5.0.0"/>
     <PackageReference Include="SpecFlow" Version="4.0.31-beta"/>
     <PackageReference Include="SpecFlow.NUnit" Version="4.0.31-beta"/>
+    <PackageReference Include="Selenium.Support" Version="4.28.0"/>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Drivers\"/>

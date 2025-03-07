@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using SpecFlow_DMQAutomation.Configuration;
-using TechTalk.SpecFlow;
+
 
 namespace SpecFlow_DMQAutomation.Hooks
 {

@@ -859,6 +859,22 @@
           }
         }
       },
+      "Selenium.Support/4.28.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.28.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Selenium.WebDriver/4.28.0": {
         "type": "package",
         "dependencies": {
@@ -2849,6 +2865,20 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "Selenium.Support/4.28.0": {
+      "sha512": "6S1gZacGGDRitU2kO92AUHQU1JkMdiFK4NAm6fn8+6eZMU8n04MF6skH6oUqkWAv0wyF1rKWD5IBMFiTBm6G5A==",
+      "type": "package",
+      "path": "selenium.support/4.28.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.28.0.nupkg.sha512",
+        "selenium.support.nuspec"
       ]
     },
     "Selenium.WebDriver/4.28.0": {
@@ -5314,6 +5344,7 @@
       "FluentAssertions >= 8.0.1",
       "Microsoft.NET.Test.Sdk >= 17.13.0",
       "NUnit3TestAdapter >= 5.0.0",
+      "Selenium.Support >= 4.28.0",
       "Selenium.WebDriver >= 4.28.0",
       "Selenium.WebDriver.ChromeDriver >= 133.0.6943.1600-beta",
       "SpecFlow >= 4.0.31-beta",
@@ -5374,6 +5405,10 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.28.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
