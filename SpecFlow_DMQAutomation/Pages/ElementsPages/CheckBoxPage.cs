@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpecFlow_DMQAutomation.Pages.ElementsPages
 {
-    class CheckBoxPage : ElementsPanelComponentPage
+    class CheckBoxPage : ElementsPanelComponent
     {
         private IWebElement _checkBoxSidePanelOption => Driver.FindElement(By.XPath("//li[contains(span, 'Check Box')]/span"));
         private readonly IWebDriver Driver;

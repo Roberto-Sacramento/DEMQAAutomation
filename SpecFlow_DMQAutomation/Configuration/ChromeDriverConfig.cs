@@ -19,8 +19,8 @@ namespace SpecFlow_DMQAutomation.Configuration
                 options.AddArgument("start-maximized");
                 _driver = new ChromeDriver(DriverPath, options);
                 _driver.Navigate().GoToUrl(BaseUrl);
-                _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
-                _driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
+                _driver.Manage().Timeouts().ImplicitWait = WebDriverConfig.DefaultTimeout;
+                _driver.Manage().Timeouts().PageLoad = WebDriverConfig.DefaultTimeout;
                 _driver.Title.Equals("DEMOQA");
             }
             return _driver;

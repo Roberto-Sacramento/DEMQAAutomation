@@ -5,11 +5,11 @@ namespace SpecFlow_DMQAutomation.Pages
     public class BasePage
     {
         #region
-        private IWebElement _elementOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Elements')]"));
-        private IWebElement _formsOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Forms')]"));
-        private IWebElement _alerts_Frame_WindowsOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Alerts, Frame & Windows')]"));
-        private IWebElement _widgetOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Widgets')]"));
-        private IWebElement _interactionsOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Interactions')]"));
+        private IWebElement _elementCardOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Elements')]"));
+        private IWebElement _formsCardOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Forms')]"));
+        private IWebElement _alerts_Frame_WindowsCardOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Alerts, Frame & Windows')]"));
+        private IWebElement _widgetsCardOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Widgets')]"));
+        private IWebElement _interactionsCardOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Interactions')]"));
         #endregion
 
         private readonly IWebDriver Driver;
@@ -18,53 +18,53 @@ namespace SpecFlow_DMQAutomation.Pages
             Driver = driver;
         }
 
-        public void ClickElementOption()
+        public void ClickElementCardOption()
         {
-            _elementOption.Click();
+            _elementCardOption.Click();
         }
 
-        public void ClickFormsOption()
+        public void ClickFormsCardOption()
         {
-            _formsOption.Click();
+            _formsCardOption.Click();
         }
 
-        public void ClickAlertsOption() 
+        public void ClickAlertsCardOption() 
         {
-            _alerts_Frame_WindowsOption.Click();
+            _alerts_Frame_WindowsCardOption.Click();
         }
 
-        public void ClickWidgetsOption()
+        public void ClickWidgetCardsOption()
         {
-            _widgetOption.Click();
+            _widgetsCardOption.Click();
         }
 
-        public void ClickInteractionsOption()
+        public void ClickInteractionsCardOption()
         {
-            _interactionsOption.Click();
+            _interactionsCardOption.Click();
         }
 
         public string ElementsOptionLoad()
         {
-            return _elementOption.Text;
+            return _elementCardOption.Text;
         }
 
         public string FormsOptionLoad()
         {
-            return _formsOption.Text;
+            return _formsCardOption.Text;
         }
 
         public string AlertsOptionLoad()
         {
-            return _alerts_Frame_WindowsOption.Text;
+            return _alerts_Frame_WindowsCardOption.Text;
         }
         public string WidgetsOptionLoad()
         {
-            return _widgetOption.Text;
+            return _widgetsCardOption.Text;
         }
 
         public string InteractionsOptionLoad() 
         {
-            return _interactionsOption.Text;
+            return _interactionsCardOption.Text;
         }
 
     }

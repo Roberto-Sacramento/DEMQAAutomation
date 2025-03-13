@@ -9,13 +9,13 @@ namespace SpecFlow_DMQAutomation.StepDefinitions.ElementsSteps
     [Binding]
     public class ElementsPageSteps 
     {
-        private readonly ElementsPanelComponentPage _elementsPanelComponent;
+        private readonly ElementsPanelComponent _elementsPanelComponent;
 
         public ElementsPageSteps(ScenarioContext scenarioContext)
         {
             if (scenarioContext.TryGetValue("WebDriver", out var driverObj) && driverObj is IWebDriver driver)
             {
-                _elementsPanelComponent = new ElementsPanelComponentPage(driver);
+                _elementsPanelComponent = new ElementsPanelComponent(driver);
             }
             else
             {

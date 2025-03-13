@@ -3,17 +3,17 @@ using OpenQA.Selenium.Support.UI;
 using System;
 
 
-namespace SpecFlow_DMQAutomation.Utils;
-
-public static class WebDriverExtensions
+namespace SpecFlow_DMQAutomation.Configuration
 {
+ public static class WebDriverExtensions
+ {
     /*
     Explanation:
-Lambda Expression:
+    Lambda Expression:
 
-The WaitToBeVisible method now uses a lambda expression within the Until method to wait for the element to be visible.
+    The WaitToBeVisible method now uses a lambda expression within the Until method to wait for the element to be visible.
 
-The lambda expression checks if the element is displayed and returns the element if it is; otherwise, it returns null.
+    The lambda expression checks if the element is displayed and returns the element if it is; otherwise, it returns null.
      */
     public static IWebElement WaitToBeVisible(this IWebDriver Driver, By by)
     {
@@ -24,4 +24,6 @@ The lambda expression checks if the element is displayed and returns the element
             return element.Displayed ? element : null;
         });
     }
+
+  } 
 }

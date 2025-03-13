@@ -3,7 +3,7 @@ using System;
 
 namespace SpecFlow_DMQAutomation.Pages.ElementsPages
 {
-    public class ElementsPanelComponentPage : BasePage
+    public class ElementsPanelComponent : BasePage
     {
         private IWebElement _elementMenuCardOption => Driver.FindElement(By.XPath("//div[contains(h5, 'Elements')]"));
         private IWebElement _elementsPanelOptions => Driver.FindElement(By.XPath("//*[contains(span, 'Elements')]//div/span"));
@@ -11,7 +11,7 @@ namespace SpecFlow_DMQAutomation.Pages.ElementsPages
 
         private readonly IWebDriver Driver;
 
-        public ElementsPanelComponentPage(IWebDriver driver) : base(driver)
+        public ElementsPanelComponent(IWebDriver driver) : base(driver)
         {
             Driver = driver;
         }

@@ -1,10 +1,9 @@
-﻿
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 
 namespace SpecFlow_DMQAutomation.Pages.ElementsPages
 {
-    public class TextBoxFormPage : ElementsPanelComponentPage
+    public class TextBoxFormPage : ElementsPanelComponent
     {
         //The elemets of the TextBoxFormPage is being find by their Id
         private IWebElement _fullNameTextBox => Driver.FindElement(By.Id("userName"));

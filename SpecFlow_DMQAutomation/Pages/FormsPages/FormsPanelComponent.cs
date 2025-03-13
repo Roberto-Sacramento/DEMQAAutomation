@@ -1,6 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using SpecFlow_DMQAutomation.Utils;
+using SpecFlow_DMQAutomation.Configuration;
 
 namespace SpecFlow_DMQAutomation.Pages.FormsPages
 {
