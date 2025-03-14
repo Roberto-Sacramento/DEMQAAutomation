@@ -6,6 +6,6 @@ namespace SpecFlow_DMQAutomation.Configuration
     public class WebDriverConfig
     {
         //This implementation defines a default wait for all elements in the project classes
-        public static readonly TimeSpan DefaultTimeout = TimeSpan.FromSeconds(60);
+        public static readonly TimeSpan DefaultTimeout = TimeSpan.FromSeconds(20);
     }
 }

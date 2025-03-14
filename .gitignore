@@ -43,3 +43,7 @@ bin/Debug/net6.0/*.tmp
 bin/Debug/net6.0/*.dll
 bin/Debug/net6.0/*.pdb
 obj/Debug/net6.0/*.cs
+SpecFlow_DMQAutomation/obj/project.assets.json
+SpecFlow_DMQAutomation/obj/project.nuget.cache
+SpecFlow_DMQAutomation/obj/SpecFlow_DMQAutomation.csproj.nuget.dgspec.json
+

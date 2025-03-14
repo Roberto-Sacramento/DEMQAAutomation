@@ -81,7 +81,7 @@ namespace SpecFlow_DMQAutomation.Features.FormsFeatures
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a registrattion for male studant", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 3
-this.ScenarioInitialize(scenarioInfo);
+    this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -91,7 +91,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 await this.ScenarioStartAsync();
 #line 4
-    await testRunner.GivenAsync("I navigate to the main page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+        await testRunner.GivenAsync("I navigate to the main page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field",
@@ -110,12 +110,18 @@ this.ScenarioInitialize(scenarioInfo);
                             "01299852544"});
                 table1.AddRow(new string[] {
                             "subjectsInput",
-                            "UFC"});
+                            "English"});
                 table1.AddRow(new string[] {
                             "currentAddress",
                             "Las Vegas"});
+                table1.AddRow(new string[] {
+                            "dateOfBirthInput",
+                            "12 Apr 2020"});
 #line 5
-    await testRunner.WhenAsync("I fill the Form fields with the following data:", ((string)(null)), table1, "When ");
+        await testRunner.WhenAsync("I fill the Form fields with the following data:", ((string)(null)), table1, "When ");
+#line hidden
+#line 14
+        await testRunner.ThenAsync("The system should display a modal with a confirmation message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

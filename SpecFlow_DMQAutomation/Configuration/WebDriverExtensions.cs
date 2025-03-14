@@ -1,7 +1,6 @@
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
-using System;
-
 
 namespace SpecFlow_DMQAutomation.Configuration
 {
@@ -15,6 +14,7 @@ namespace SpecFlow_DMQAutomation.Configuration
 
     The lambda expression checks if the element is displayed and returns the element if it is; otherwise, it returns null.
      */
+
     public static IWebElement WaitToBeVisible(this IWebDriver Driver, By by)
     {
         var wait = new WebDriverWait(Driver, WebDriverConfig.DefaultTimeout);
@@ -24,6 +24,8 @@ namespace SpecFlow_DMQAutomation.Configuration
             return element.Displayed ? element : null;
         });
     }
+
+
 
   } 
 }
