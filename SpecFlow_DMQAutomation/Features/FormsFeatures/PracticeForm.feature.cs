@@ -121,7 +121,8 @@ namespace SpecFlow_DMQAutomation.Features.FormsFeatures
         await testRunner.WhenAsync("I fill the Form fields with the following data:", ((string)(null)), table1, "When ");
 #line hidden
 #line 14
-        await testRunner.ThenAsync("The system should display a modal with a confirmation message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+        await testRunner.ThenAsync("The system should display a modal with the following message: Thanks for submitti" +
+                        "ng the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

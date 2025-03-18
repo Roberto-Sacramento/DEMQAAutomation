@@ -11,4 +11,4 @@ Feature: Forms
             | subjectsInput    | English               |
             | currentAddress   | Las Vegas             |
             | dateOfBirthInput | 12 Apr 2020           |
-        Then The system should display a modal with a confirmation message
+        Then The system should display a modal with the following message: Thanks for submitting the form

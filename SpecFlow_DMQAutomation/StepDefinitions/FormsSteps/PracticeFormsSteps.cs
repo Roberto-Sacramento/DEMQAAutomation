@@ -50,11 +50,11 @@ public class PracticeFormsSteps
         fillFormsDataFields.FillFormForAllTipesOfElements(fieldDada);
     }
 
-    [Then(@"The system should display a modal with a confirmation message")]
-    public void TheSystemDiplayedAMessage()
+    [Then(@"The system should display a modal with the following message: (.*)")]
+    public void TheSystemDiplayedAMessage(string ActualMessage)
     {
         string expectMessage = practiceForm.ConfirmMessagemOnTable();
-        ClassicAssert.AreEqual(expectMessage, "Thanks for submitting the form");
+        ClassicAssert.AreEqual(expectMessage, ActualMessage);
         practiceForm.ClickOnCloseModalButton();
     }
 }

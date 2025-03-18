@@ -1,4 +1,5 @@
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using SpecFlow_DMQAutomation.Configuration;
 using SpecFlow_DMQAutomation.Pages;
 
@@ -41,8 +42,8 @@ namespace SpecFlow_DMQAutomation.Utils
                 switch (element.TagName.ToLower())
                 {
                     case "select": // Dropdown
-                        //SelectElement selectElement = new SelectElement(element);
-                        //selectElement.SelectByValue(value); // or selectElement.SelectByText(value);
+                        SelectElement selectElement = new SelectElement(element);
+                        selectElement.SelectByValue(value); // or selectElement.SelectByText(value);
                         break;
                     case "input":
                         string type = element.GetAttribute("type").ToLower();
